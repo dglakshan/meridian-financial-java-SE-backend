@@ -1,4 +1,15 @@
 package org.meridian.exception;
 
-public class InsufficientBalanceException {
+public class InsufficientBalanceException extends RuntimeException{
+    public InsufficientBalanceException(){
+        super("Insufficient balance to perform this transaction");
+    }
+
+    public InsufficientBalanceException(String message){
+        super(message);
+    }
+
+    public InsufficientBalanceException(String message,Throwable cause){
+        super(message,cause);
+    }
 }
