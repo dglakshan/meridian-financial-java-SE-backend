@@ -2,16 +2,16 @@ package org.meridian.model;
 
 import java.util.List;
 
-public class AccountModel {
+public class BankAccountModel {
     private String accountOwnerId;
     private String accountNumber;
     private double totalBalance;
     private double totalHoldBalance;
 
-    public AccountModel(){}
+    public BankAccountModel(){}
 
-    public AccountModel(String accountOwnerId,String accountNumber,
-                              double totalBalance,double totalHoldBalance,List<String> holdBalance){
+    public BankAccountModel(String accountOwnerId, String accountNumber,
+                            double totalBalance, double totalHoldBalance, List<String> holdBalance){
         this.accountOwnerId =accountOwnerId;
         this.accountNumber = accountNumber;
         this.totalBalance = totalBalance;

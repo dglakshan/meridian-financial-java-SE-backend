@@ -1,4 +1,4 @@
 package org.meridian.service;
 
-public interface AccountService {
+public class AccountService {
 }
